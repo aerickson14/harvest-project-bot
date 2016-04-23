@@ -19,5 +19,6 @@ bot.startRTM(function (err, bot, payload) {
 })
 
 controller.hears('.*', ['mention'], function (bot, message) {
-  bot.replyPrivate(message, 'Hi')
+    console.log("Heard a mention");
+    bot.replyPrivate(message, 'Hi')
 })

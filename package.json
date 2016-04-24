@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/beepboophq/node-slack-bot#readme",
   "dependencies": {
-    "botkit": "0.0.5"
+    "botkit": "0.0.5",
+    "harvest": "0.1.4",
+    "nconf": "0.8.4"
   }
 }

@@ -27,6 +27,10 @@ bot.startRTM(function (err, bot, payload) {
   }
 })
 
+controller.hears(['help'], ['direct_message', 'direct_mention'], function(bot, message) {
+    bot.reply(message, "Send me a direct message or mention with the word 'projects' in it :simple_smile:");
+});
+
 controller.hears(['projects'], ['direct_message', 'direct_mention'], function(bot, message) {
     
     harvest.Projects.list({}, function(err, projects) {
